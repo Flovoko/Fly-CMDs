@@ -14,7 +14,7 @@ public class FlySpeedCommand implements CommandExecutor {
             Player player = (Player) sender;
             if(player.hasPermission("minecraft.*")) {
                 if(args.length == 0) {
-                    player.sendMessage("§cBenutzung: /flyspeed [slow,medium,high] !");
+                    player.sendMessage("§cBenutzung: /flyspeed [slow,medium,fast] !");
                 }else if(args.length == 1){
                     if(args[0].equalsIgnoreCase("slow")) {
                         player.setFlySpeed((float) 0.1);
@@ -22,11 +22,11 @@ public class FlySpeedCommand implements CommandExecutor {
                     }else if(args[0].equalsIgnoreCase("medium")) {
                         player.setFlySpeed(0.5F);
                         player.sendMessage("§eFlySpeed §aMEDIUM§e !");
-                    }else if(args[0].equalsIgnoreCase("high")) {
+                    }else if(args[0].equalsIgnoreCase("fast")) {
                         player.setFlySpeed(1);
-                        player.sendMessage("§eFlySpeed §aHIGH§e !");
+                        player.sendMessage("§eFlySpeed §aFAST§e !");
                     }else {
-                        player.sendMessage("§cBenutzung: /flyspeed [slow,medium,high] !");
+                        player.sendMessage("§cBenutzung: /flyspeed [slow,medium,fast] !");
                     }
                 }
             }else {
