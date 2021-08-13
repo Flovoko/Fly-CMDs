@@ -1,0 +1,11 @@
+name: Fly-Plugin
+version: 1.0-SNAPSHOT
+main: de.florian.fly.main.main
+api-version: 1.16
+authors: [ Flo ]
+
+commands:
+  fly:
+    description:
+  flyspeed:
+    description:
